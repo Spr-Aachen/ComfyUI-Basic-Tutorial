@@ -4,10 +4,6 @@
 
 ![Title](/docs/media/Title.png "Home Page")
 
-[![Bilibili](https://img.shields.io/badge/Bilibili-ComfyUI新手指南1-blue?logo=Bilibili&style=for-the-badge)](https://www.bilibili.com/video/BV1D7421N7xN)&nbsp;
-[![Bilibili](https://img.shields.io/badge/Bilibili-ComfyUI新手指南2-blue?logo=Bilibili&style=for-the-badge)](https://www.bilibili.com/video/BV1ab42187er)&nbsp;
-[![YouTube](https://img.shields.io/badge/YouTube--red?logo=YouTube&style=for-the-badge)]()
-
 </div>
 
 <p align = "center">
@@ -28,6 +24,7 @@
 ComfyUI is a node-based user interface for [Stable Diffusion](/docs/EN/StableDiffusion.md).
 
 Node-based interfaces are easier to understand and use than traditional text-based interfaces. They can be normally seen in professional programs like [Blender](https://www.blender.org/), [Unreal Engine](https://www.unrealengine.com/en-US), [Houdini](https://www.sidefx.com/), etc.
+![](/docs/media/Software.png)
 
 And ComfyUI looks like this:
 ![](/docs/media/Interfaces_ComfyUI.gif)
@@ -53,3 +50,7 @@ ComfyUI has the following advantages:
 
 
 ## Acknowledgement
+
+[![Bilibili](https://img.shields.io/badge/Bilibili-ComfyUI新手指南1-blue?logo=Bilibili&style=for-the-badge)](https://www.bilibili.com/video/BV1D7421N7xN)&nbsp;
+[![Bilibili](https://img.shields.io/badge/Bilibili-ComfyUI新手指南2-blue?logo=Bilibili&style=for-the-badge)](https://www.bilibili.com/video/BV1ab42187er)&nbsp;
+[![YouTube](https://img.shields.io/badge/YouTube--red?logo=YouTube&style=for-the-badge)]()
