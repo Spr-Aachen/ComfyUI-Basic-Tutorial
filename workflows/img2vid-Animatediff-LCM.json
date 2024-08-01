@@ -1,6 +1,6 @@
 {
-  "last_node_id": 784,
-  "last_link_id": 1669,
+  "last_node_id": 785,
+  "last_link_id": 1671,
   "nodes": [
     {
       "id": 79,
@@ -116,12 +116,12 @@
       },
       "flags": {},
       "order": 70,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "image",
           "type": "IMAGE",
-          "link": 1304
+          "link": 1670
         },
         {
           "name": "amount",
@@ -163,7 +163,7 @@
       },
       "flags": {},
       "order": 62,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "a",
@@ -173,7 +173,7 @@
         {
           "name": "b",
           "type": "INT,FLOAT",
-          "link": 1305
+          "link": 1671
         }
       ],
       "outputs": [
@@ -580,7 +580,7 @@
       },
       "flags": {},
       "order": 48,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "batch",
@@ -617,7 +617,7 @@
       },
       "flags": {},
       "order": 74,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "positive",
@@ -709,46 +709,6 @@
       ]
     },
     {
-      "id": 127,
-      "type": "ControlNetLoaderAdvanced",
-      "pos": [
-        992.9721041870118,
-        817.2960102539063
-      ],
-      "size": {
-        "0": 327.6000061035156,
-        "1": 61.56922149658203
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "timestep_keyframe",
-          "type": "TIMESTEP_KEYFRAME",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            240
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetLoaderAdvanced"
-      },
-      "widgets_values": [
-        "control_v1p_sd15_qrcode_monster.safetensors"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 458,
       "type": "VHS_SplitImages",
       "pos": [
@@ -761,7 +721,7 @@
       },
       "flags": {},
       "order": 72,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "images",
@@ -814,29 +774,6 @@
       "widgets_values": {
         "split_index": 136
       }
-    },
-    {
-      "id": 579,
-      "type": "Note",
-      "pos": [
-        1352,
-        1016
-      ],
-      "size": {
-        "0": 210,
-        "1": 72.2750244140625
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 4,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "QRCode Controlnet is responsible for the flowing motion from the video mask"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     },
     {
       "id": 566,
@@ -893,7 +830,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "properties": {
         "text": ""
@@ -978,7 +915,7 @@
         "1": 246
       },
       "flags": {},
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -1029,7 +966,7 @@
         "1": 60.41526412963867
       },
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "properties": {
         "text": ""
@@ -1052,7 +989,7 @@
         "1": 58.864524841308594
       },
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "properties": {
         "text": ""
@@ -1075,7 +1012,7 @@
         "1": 59.32109451293945
       },
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "properties": {
         "text": ""
@@ -1098,7 +1035,7 @@
         "1": 59.932472229003906
       },
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 4,
       "properties": {
         "text": ""
@@ -1121,7 +1058,7 @@
         "1": 73.23861694335938
       },
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "properties": {
         "text": ""
@@ -1449,7 +1386,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "outputs": [
         {
@@ -1647,7 +1584,7 @@
         "1": 278.27099609375
       },
       "flags": {},
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "outputs": [
         {
@@ -1672,92 +1609,6 @@
         512,
         "linear"
       ]
-    },
-    {
-      "id": 568,
-      "type": "VHS_LoadVideoPath",
-      "pos": [
-        1015.9721041870118,
-        520.2960102539063
-      ],
-      "size": [
-        230,
-        238
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "meta_batch",
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1304
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "frame_count",
-          "type": "INT",
-          "links": [
-            1305
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "audio",
-          "type": "VHS_AUDIO",
-          "links": [],
-          "shape": 3,
-          "slot_index": 2
-        },
-        {
-          "name": "video_info",
-          "type": "VHS_VIDEOINFO",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_LoadVideoPath"
-      },
-      "widgets_values": {
-        "video": "https://imgur.com/FZojh3v",
-        "force_rate": 12,
-        "force_size": "Disabled",
-        "custom_width": 512,
-        "custom_height": 512,
-        "frame_load_cap": 0,
-        "skip_first_frames": 0,
-        "select_every_nth": 1,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "frame_load_cap": 0,
-            "skip_first_frames": 0,
-            "force_rate": 12,
-            "filename": "https://imgur.com/FZojh3v",
-            "type": "path",
-            "format": "video/com/FZojh3v",
-            "select_every_nth": 1
-          }
-        }
-      }
     },
     {
       "id": 767,
@@ -1807,7 +1658,7 @@
         "1": 278.34649658203125
       },
       "flags": {},
-      "order": 15,
+      "order": 12,
       "mode": 0,
       "outputs": [
         {
@@ -1908,7 +1759,7 @@
         "1": 116.92442321777344
       },
       "flags": {},
-      "order": 16,
+      "order": 13,
       "mode": 0,
       "properties": {
         "text": ""
@@ -1931,7 +1782,7 @@
         "1": 67.75072479248047
       },
       "flags": {},
-      "order": 17,
+      "order": 14,
       "mode": 0,
       "properties": {
         "text": ""
@@ -2015,7 +1866,7 @@
         "1": 281.4254455566406
       },
       "flags": {},
-      "order": 18,
+      "order": 15,
       "mode": 0,
       "outputs": [
         {
@@ -2053,7 +1904,7 @@
         "1": 279.27099609375
       },
       "flags": {},
-      "order": 19,
+      "order": 16,
       "mode": 0,
       "outputs": [
         {
@@ -2091,7 +1942,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 20,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2154,36 +2005,13 @@
         "1": 70.40103149414062
       },
       "flags": {},
-      "order": 21,
+      "order": 18,
       "mode": 0,
       "properties": {
         "text": ""
       },
       "widgets_values": [
         "Prompts aren't really needed in this workflow - IPAdapter is doing all the prompting.\n\nNegative prompt is ignored at 1.0 Cfg anyways."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 731,
-      "type": "Note",
-      "pos": [
-        995,
-        911
-      ],
-      "size": {
-        "0": 318.0434265136719,
-        "1": 69.7325439453125
-      },
-      "flags": {},
-      "order": 22,
-      "mode": 4,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "control_v1p_sd15_qrcode_monster.safetensors\nhttps://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster/resolve/main/control_v1p_sd15_qrcode_monster.safetensors?download=true"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -2270,7 +2098,7 @@
         "1": 281.4254455566406
       },
       "flags": {},
-      "order": 23,
+      "order": 19,
       "mode": 0,
       "outputs": [
         {
@@ -2308,7 +2136,7 @@
         "1": 281.4254455566406
       },
       "flags": {},
-      "order": 24,
+      "order": 20,
       "mode": 0,
       "outputs": [
         {
@@ -2346,8 +2174,8 @@
         "1": 88.67984771728516
       },
       "flags": {},
-      "order": 25,
-      "mode": 4,
+      "order": 21,
+      "mode": 0,
       "properties": {
         "text": ""
       },
@@ -2369,7 +2197,7 @@
         "1": 314.64361572265625
       },
       "flags": {},
-      "order": 26,
+      "order": 22,
       "mode": 0,
       "outputs": [
         {
@@ -2410,7 +2238,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 27,
+      "order": 23,
       "mode": 0,
       "outputs": [
         {
@@ -2451,7 +2279,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 28,
+      "order": 24,
       "mode": 0,
       "outputs": [
         {
@@ -2623,7 +2451,7 @@
         "1": 281.4254455566406
       },
       "flags": {},
-      "order": 29,
+      "order": 25,
       "mode": 0,
       "outputs": [
         {
@@ -2661,7 +2489,7 @@
         "1": 281.4254455566406
       },
       "flags": {},
-      "order": 30,
+      "order": 26,
       "mode": 0,
       "outputs": [
         {
@@ -2843,7 +2671,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 31,
+      "order": 27,
       "mode": 0,
       "outputs": [
         {
@@ -2993,7 +2821,7 @@
         26
       ],
       "flags": {},
-      "order": 32,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -3156,7 +2984,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 33,
+      "order": 29,
       "mode": 0,
       "outputs": [
         {
@@ -3197,7 +3025,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 34,
+      "order": 30,
       "mode": 0,
       "outputs": [
         {
@@ -3403,7 +3231,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 35,
+      "order": 31,
       "mode": 0,
       "outputs": [
         {
@@ -3444,7 +3272,7 @@
         "1": 281.4254455566406
       },
       "flags": {},
-      "order": 36,
+      "order": 32,
       "mode": 0,
       "outputs": [
         {
@@ -3482,7 +3310,7 @@
         "1": 281.4254455566406
       },
       "flags": {},
-      "order": 37,
+      "order": 33,
       "mode": 0,
       "outputs": [
         {
@@ -3515,12 +3343,12 @@
         1270.9551345122698,
         50.39726043689956
       ],
-      "size": [
-        310.8284606933594,
-        314.00000381469727
-      ],
+      "size": {
+        "0": 310.8284606933594,
+        "1": 314
+      },
       "flags": {},
-      "order": 38,
+      "order": 34,
       "mode": 0,
       "outputs": [
         {
@@ -3561,7 +3389,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 39,
+      "order": 35,
       "mode": 0,
       "outputs": [
         {
@@ -3682,7 +3510,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 40,
+      "order": 36,
       "mode": 0,
       "outputs": [
         {
@@ -3862,7 +3690,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 41,
+      "order": 37,
       "mode": 0,
       "outputs": [
         {
@@ -3940,7 +3768,7 @@
         "1": 98
       },
       "flags": {},
-      "order": 42,
+      "order": 38,
       "mode": 0,
       "outputs": [
         {
@@ -4327,6 +4155,178 @@
       },
       "color": "#222",
       "bgcolor": "#000"
+    },
+    {
+      "id": 785,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        1028,
+        511
+      ],
+      "size": [
+        235.1999969482422,
+        491.20001220703125
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1670
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "frame_count",
+          "type": "INT",
+          "links": [
+            1671
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "VHS_AUDIO",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_LoadVideo"
+      },
+      "widgets_values": {
+        "video": "FZojh3v.mp4",
+        "force_rate": 12,
+        "force_size": "Disabled",
+        "custom_width": 512,
+        "custom_height": 512,
+        "frame_load_cap": 0,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "choose video to upload": "image",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "force_rate": 12,
+            "filename": "FZojh3v.mp4",
+            "type": "input",
+            "format": "video/mp4",
+            "select_every_nth": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 127,
+      "type": "ControlNetLoaderAdvanced",
+      "pos": [
+        992,
+        1043
+      ],
+      "size": {
+        "0": 327.6000061035156,
+        "1": 61.56922149658203
+      },
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "timestep_keyframe",
+          "type": "TIMESTEP_KEYFRAME",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            240
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoaderAdvanced"
+      },
+      "widgets_values": [
+        "control_v1p_sd15_qrcode_monster.safetensors"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 731,
+      "type": "Note",
+      "pos": [
+        999,
+        1133
+      ],
+      "size": {
+        "0": 318.0434265136719,
+        "1": 69.7325439453125
+      },
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "control_v1p_sd15_qrcode_monster.safetensors\nhttps://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster/resolve/main/control_v1p_sd15_qrcode_monster.safetensors?download=true"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 579,
+      "type": "Note",
+      "pos": [
+        1353,
+        1228
+      ],
+      "size": {
+        "0": 210,
+        "1": 72.2750244140625
+      },
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "QRCode Controlnet is responsible for the flowing motion from the video mask"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -4601,22 +4601,6 @@
       580,
       0,
       "IMAGE"
-    ],
-    [
-      1304,
-      568,
-      0,
-      454,
-      0,
-      "IMAGE"
-    ],
-    [
-      1305,
-      568,
-      1,
-      461,
-      1,
-      "INT,FLOAT"
     ],
     [
       1448,
@@ -5209,6 +5193,22 @@
       780,
       1,
       "IPADAPTER"
+    ],
+    [
+      1670,
+      785,
+      0,
+      454,
+      0,
+      "IMAGE"
+    ],
+    [
+      1671,
+      785,
+      1,
+      461,
+      1,
+      "INT,FLOAT"
     ]
   ],
   "groups": [
@@ -5221,7 +5221,8 @@
         1290
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "AnimateDiff",
@@ -5232,18 +5233,20 @@
         998
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "QrCode Controlnet",
       "bounding": [
         988,
         438,
-        1017,
-        559
+        1042,
+        770
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "Settings",
@@ -5254,7 +5257,8 @@
         449
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "Samplers",
@@ -5265,7 +5269,8 @@
         1207
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "Upscale /w Model",
@@ -5276,7 +5281,8 @@
         653
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "Frame Interpolation",
@@ -5287,7 +5293,8 @@
         652
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "IPAdapters - Scene2",
@@ -5298,7 +5305,8 @@
         1287
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "IPAdapters - Scene3",
@@ -5309,7 +5317,8 @@
         1287
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "IPAdapters - Scene4",
@@ -5320,7 +5329,8 @@
         1285
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "IPAdapters - Scene5",
@@ -5331,7 +5341,8 @@
         1284
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     },
     {
       "title": "IPAdapters - Scene1",
@@ -5342,7 +5353,8 @@
         1291
       ],
       "color": "#3f789e",
-      "font_size": 24
+      "font_size": 24,
+      "locked": false
     }
   ],
   "config": {},
@@ -5352,10 +5364,10 @@
     },
     "groupNodes": {},
     "ds": {
-      "scale": 0.21762913579014867,
+      "scale": 0.8264462809917362,
       "offset": {
-        "0": 618.3640747070312,
-        "1": 2147.948486328125
+        "0": -557.313232421875,
+        "1": -166.97914123535156
       }
     }
   },
